@@ -1,0 +1,18 @@
+- To list all environments: conda env list
+- To delete an environment: conda env remove -n ENV_NAME
+- To see al installed packages in an env: pip list
+- To activate an environment: conda activate env_name
+
+- To create env with a YAML File: conda env create -n ENVNAME --file file_name.yml
+- To create env with a TEXT File: conda create -n ENVNAME --file ENV.txt
+- To create env with a specific python version: conda create -n env_name python=3.7 numpy
+
+- To export an environment as a YAML file: conda env export --file conda_requirements_yml.yml
+- To export an environment as a TEXT file: conda list --explicit>conda_requirements_txt.txt
+- To export all modules with their versions: pip freeze > module_versions.txt 
+
+- To create an environment with some basic packages: conda create -n ENV_NAME numpy pandas matplotlib seaborn scikit-learn flask jupyter
+
+- To create a pytorch environment: conda create -n pytorch_env python=3.7 numpy pytorch torchvision -c pytorch
+
+- To activate anaconda in cmd: C:/ProgramData/Anaconda3/Scripts/activate
